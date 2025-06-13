@@ -1,0 +1,583 @@
+:root {
+    --dark-blue: #002f6c;
+    --medium-blue: #00449e;
+    --light-blue: #0066ff;
+    --white: #ffffff;
+    --yellow: #ffe600;
+    --gray: #f5f5f5;
+    --dark-gray: #333333;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  body {
+    background-color: var(--white);
+    color: var(--dark-gray);
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  /* Layout Base */
+  .section {
+    padding: 4rem 5%;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .section-title h2 {
+    font-size: 2.5rem;
+    color: var(--dark-blue);
+    position: relative;
+    display: inline-block;
+  }
+
+  .section-title h2::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 3px;
+    background-color: var(--yellow);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Navbar */
+  .navbar {
+    background-color: var(--dark-blue);
+    padding: 1rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo-fortsun {
+    height: 40px;
+    width: auto;
+  }
+
+  .logo-mercado-pago {
+    height: 30px;
+    width: auto;
+  }
+
+  .nav-links {
+    display: flex;
+    list-style: none;
+    gap: 1.5rem;
+  }
+
+  .nav-links a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+  }
+
+  .nav-links a:hover {
+    color: var(--yellow);
+  }
+
+  .nav-links a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: var(--yellow);
+    bottom: -5px;
+    left: 0;
+    transition: width 0.3s;
+  }
+
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+
+  .mobile-menu-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+
+  .product-image-animated{
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .partnership-img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+    animation: float 1.8s ease-in-out infinite;
+  }
+
+
+  .partnership-hero {
+    height: 60vh;
+    background: linear-gradient(rgba(0, 47, 108, 0.9), rgba(0, 69, 158, 0.8));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 100px 5% 0;
+    margin-bottom: 3rem;
+  }
+
+  .hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(2rem, 5vw, 3.5rem);
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-content h1 span {
+    color: var(--yellow);
+  }
+
+  .hero-content p {
+    font-size: clamp(1rem, 2vw, 1.5rem);
+    margin-bottom: 2rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-button {
+    display: inline-block;
+    background-color: var(--yellow);
+    color: var(--dark-blue);
+    padding: 0.8rem 2rem;
+    border-radius: 40px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    border: 2px solid var(--yellow);
+    font-size: 1rem;
+  }
+
+  .cta-button:hover {
+    background-color: transparent;
+    color: var(--yellow);
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  .product-showcase {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 0;
+  }
+
+  .product-image {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .product-image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.3));
+  }
+
+  .product-details {
+    flex: 1;
+    min-width: 300px;
+  }
+
+  .product-details h3 {
+    font-size: 2rem;
+    color: var(--dark-blue);
+    margin-bottom: 1.5rem;
+  }
+
+  .product-details ul {
+    list-style: none;
+    margin: 1.5rem 0;
+  }
+
+  .product-details ul li {
+    margin-bottom: 0.8rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  .product-details ul li::before {
+    content: "•";
+    color: var(--yellow);
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -3px;
+  }
+
+  .timeline {
+    position: relative;
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--yellow);
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -1.5px;
+  }
+
+  .timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  .timeline-item::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: var(--white);
+    border: 3px solid var(--yellow);
+    border-radius: 50%;
+    top: 15px;
+    z-index: 1;
+  }
+
+  .left {
+    left: 0;
+  }
+
+  .right {
+    left: 50%;
+  }
+
+  .left::after {
+    right: -10px;
+  }
+
+  .right::after {
+    left: -10px;
+  }
+
+  .timeline-content {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .timeline-content h4 {
+    color: var(--dark-blue);
+    margin-bottom: 0.5rem;
+  }
+
+  .timeline-content p {
+    color: var(--dark-gray);
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+
+  .benefit-card {
+    background-color: var(--white);
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+    border-top: 4px solid var(--yellow);
+  }
+
+  .benefit-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .benefit-card i {
+    font-size: 2.5rem;
+    color: var(--yellow);
+    margin-bottom: 1rem;
+  }
+
+  .cta-section {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--medium-blue) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 4rem 5%;
+    margin-top: 3rem;
+  }
+
+  .cta-section .section-title h2 {
+    color: var(--white);
+  }
+
+  .cta-section .section-title h2::after {
+    background-color: var(--yellow);
+  }
+
+  /* Footer */
+  .footer {
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 3rem 5%;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .footer-column {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--yellow);
+  }
+
+  .footer-column p {
+    margin-bottom: 1rem;
+  }
+
+  .social-links {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  .social-links a {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: color 0.3s;
+  }
+
+  .social-links a:hover {
+    color: var(--yellow);
+  }
+
+  .footer-column ul {
+    list-style: none;
+  }
+
+  .footer-column ul li {
+    margin-bottom: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .footer-column ul li i {
+    color: var(--yellow);
+    min-width: 20px;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  /* Responsive Styles */
+  @media (max-width: 992px) {
+    .section {
+      padding: 3rem 5%;
+    }
+
+    .product-showcase {
+      flex-direction: column;
+    }
+
+    .timeline::after {
+      left: 31px;
+    }
+
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+    }
+
+    .timeline-item::after {
+      left: 21px;
+    }
+
+    .left::after, .right::after {
+      left: 21px;
+    }
+
+    .right {
+      left: 0%;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      position: fixed;
+      top: 80px;
+      left: 0;
+      right: 0;
+      background-color: var(--dark-blue);
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      gap: 1rem;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .nav-links.active {
+      display: flex;
+    }
+
+    .mobile-menu-btn {
+      display: block;
+    }
+
+    .partnership-hero {
+      padding-top: 120px;
+      height: auto;
+      padding-bottom: 3rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .section {
+      padding: 2rem 5%;
+    }
+
+    .section-title h2 {
+      font-size: 2rem;
+    }
+
+    .benefits-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animated {
+    animation: fadeIn 1s ease forwards;
+  }
+
+  .delay-1 {
+    animation-delay: 0.3s;
+  }
+
+  .delay-2 {
+    animation-delay: 0.6s;
+  }
+  .partnership-hero {
+  height: 100vh;
+  background: linear-gradient(rgba(0, 27, 58, 0.969), rgba(0, 51, 118, 0.838)),
+    url("assets/img/Mercado-Pago-e-Mercado-Livre.webp") no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--white);
+  padding: 80px 5% 0;
+}
+.benefit-card {
+transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.cta-button {
+transition: all 0.3s ease, box-shadow 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+[class*="container"], 
+[class*="grid"],
+.section-title,
+.contact-form {
+transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+body.js-loading [class*="container"],
+body.js-loading [class*="grid"],
+body.js-loading .section-title,
+body.js-loading .contact-form {
+opacity: 0;
+transform: translateY(20px);
+}
+
+.service-card,
+.state-card,
+.portfolio-item,
+.program-item,
+.benefit-item {
+transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+body.js-loading .service-card,
+body.js-loading .state-card,
+body.js-loading .portfolio-item,
+body.js-loading .program-item,
+body.js-loading .benefit-item {
+opacity: 0;
+transform: translateY(20px);
+}

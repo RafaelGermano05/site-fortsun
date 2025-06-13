@@ -1,12 +1,658 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fortsun Brasil</title>
-    <link rel="stylesheet" href="assets/style..css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="FortSun Brasil - Soluções em pagamentos digitais e parceria estratégica com Mercado Pago">
+  <title>FORTSUN BRASIL - Soluções em Pagamentos</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="shortcut icon" href="assets/img/fav-fortsun-logo.jpg" type="image/x-icon" />
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <style>
+  .fullscreen-hero {
+    height: 100vh;
+    background: linear-gradient(rgba(2, 11, 33, 0.975), rgba(6, 24, 67, 0.838)),
+      url("assets/img/fortsun-pessoas.jpeg") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 80px 5% 0;
+  }
+
+  #partnership{
+    height: 100vh;
+    background: linear-gradient(rgba(6, 24, 67, 0.838), rgba(2, 11, 33, 0.975)),
+      url("assets/img/IMG_5124.PNG") no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--white);
+    padding: 80px 5% 0;
+  }
+
+/* .partnership-container, .service-card, .state-card,
+.portfolio-item, .program-item, .benefit-item,
+.partner-logo, .section-title, .contact-form {
+  will-change: transform, opacity;
+} */
+
+  </style>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-    <h1>-- bad gateway 502 --</h1>
+  <script>
+  AOS.init();
+</script>
+  <nav class="navbar">
+    <div class="logo-container">
+      <img src="assets/img/LOGO_FORTSUN_PDF.1.png" alt="Fortsun Logo" class="logo-fortsun" />
+      <img src="assets/img/MP_CMYK_HANDSHAKE_pluma-relleno-blanco_hori-izq.png" alt="Mercado Pago Logo" class="logo-mercado-pago" />
+    </div>
+    <button class="mobile-menu-btn" aria-label="Menu">
+      <i class="fa fa-bars"></i>
+    </button>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#partnership">Mercado Pago</a></li>
+      <li><a href="#services">Serviços</a></li>
+      <li><a href="#portfolio">Sun News</a></li>
+      <li><a href="#sun-academy">Sun Academy</a></li>
+      <li><a href="#partners">Parceiros</a></li>
+      <li><a href="#footer">Contato</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero" class="fullscreen-hero">
+  <div class="hero-content">
+    <h1 class="hero-title">Olá, nós somos a <span>FORTSUN BRASIL</span></h1>
+    <p class="hero-subtitle">Construímos um futuro financeiro tecnológico acessível e sem complicações.</p>
+    <div class="cta-container">
+      <!-- <a href="https://wa.me/558597408040" class="cta-button">Fale Conosco</a> -->
+      <!-- <a href="#services" class="cta-button secondary">Nossos Serviços</a> -->
+    </div>
+  </div>
+</section>
+
+  <!-- Parceria Mercado Pago -->
+<section class="section partnership-section" id="partnership" class="historia">
+  <div class="partnership-container">
+    <div class="partnership-text">
+      <!-- <h2 class="title-animate">Parceria Estratégica <span>Mercado Pago</span></h2> -->
+      
+      <div class="history-headline">
+        <div class="history-word" data-word="CONHEÇA" style="color: rgb(232, 242, 255);">CONHEÇA</div>
+        <div class="history-word" data-word="NOSSA" style="color: rgb(219, 235, 255);">NOSSA</div>
+        <div class="history-word" data-word="HISTÓRIA" style="color: rgb(206, 228, 255);">HISTÓRIA</div>
+      </div>
+      
+      <a href="historia.html" class="cta-button magnetic-btn" target="_blank">
+        <span class="btn-text">Conheça a FORTSUN</span>
+        <span class="btn-arrow">→</span>
+      </a>
+    </div>
+    
+    <div class="partnership-images">
+  <div class="orbital-container">
+    <img src="assets/img/SLOGAN FORTSUN PNG (3).png" alt="Maquininha Mercado Pago" class="partnership-logo orbital-logo">
+    <div class="orbital-dots">
+      <div class="dot dot-1"><img src="assets/img/MP2025.PNG" alt="" data-aos="zoom-in-up" data-aos-duration="500"></div>
+      <div class="dot dot-2"><img src="assets/img/MP2025.PNG" alt="" data-aos="zoom-in-up" data-aos-duration="500"></div>
+      <div class="dot dot-3"><img src="assets/img/SLOGAN FORTSUN PNG (1).png" alt="" data-aos="zoom-in-up" data-aos-duration="500"></div>
+      <div class="dot dot-4"><img src="assets/img/SLOGAN FORTSUN PNG (1).png" alt="" data-aos="zoom-in-up" data-aos-duration="500"></div>
+    </div>
+  </div>
+</div>
+    <!-- <div class="partnership-images">
+      <img src="assets/img/hero-maquininha-img-removebg-preview.png" alt="Maquininha Mercado Pago" class="partnership-logo floating-3d">
+    </div>
+  </div> -->
+</section>
+  
+  <!-- Serviços e Áreas -->
+  <section class="section services-section" id="services">
+    <div class="section-title">
+      <h2>Nossos Serviços e Áreas de Atuação</h2>
+    </div>
+    <div class="services-container">
+      <div class="service-card" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="service-icon">
+          <!-- <i class="fas fa-credit-card"></i> -->
+           <img src="assets/img/point-amarela.png" alt="point smart 2">
+        </div>
+        <h3>Maquininhas de Cartão</h3>
+        <p>As melhores maquininhas do mercado com tecnologia de ponta e segurança para todas as suas transações.</p>
+        <a href="partner.html" class="cta-button" style="margin-top: 1.5rem;">Solicitar Agora</a>
+      </div>
+      <div class="service-card" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="service-icon">
+          <!-- <i class="fas fa-chart-line"></i> -->
+           <img src="assets/img/taxa.png" alt="taxa">
+        </div>
+        <h3>Taxas Competitivas</h3>
+        <p>Planos personalizados de acordo com o volume de transações do seu negócio.</p>
+        <a href="partner.html" class="cta-button" style="margin-top: 1.5rem;">Solicitar Agora</a>
+      </div>
+      <div class="service-card" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="service-icon">
+          <!-- <i class="fas fa-headset"></i> -->
+           <img src="assets/img/atendimento-ao-cliente.png" alt="Suporte Personalizado">
+        </div>
+        <h3>Suporte Especializado</h3>
+        <p>Equipe técnica e comercial disponível para resolver qualquer problema.</p>
+        <a href="partner.html" class="cta-button" style="margin-top: 1.5rem;">Solicitar Agora</a>
+      </div>
+    </div>
+       
+    <div class="section-title" style="margin-top: 4rem;">
+      <h2>Onde a FORTSUN está?</h2>
+    </div>
+    
+    <div class="states-container">
+      <div class="state-card" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="state-icon">
+          <img src="assets/img/BOLOTA (25)/2.png" alt="CEARÁ">
+        </div>
+        <h3>Ceará</h3>
+      </div>
+      <div class="state-card" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="state-icon">
+          <img src="assets/img/BOLOTA (25)/3.png" alt="PIAUÍ">
+        </div>
+        <h3>Piauí</h3>
+      </div>
+      <div class="state-card" data-aos="zoom-in-up" data-aos-duration="1000">
+        <div class="state-icon">
+          <img src="assets/img/BOLOTA (25)/4.png" alt="MARANHÃO">
+        </div>
+        <h3>Maranhão</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio -->
+<section class="section portfolio-section" id="portfolio">
+  <div class="section-title">
+    <h2>SUN NEWS</h2>
+  </div>
+  <div class="portfolio-single-container">
+    <a href="news.html" class="portfolio-single-item" target="_blank" data-aos="zoom-in" data-aos-duration="1000">
+      <img src="assets/img/sunnewss.png" alt="FORTSUN NEWS" class="portfolio-single-img">
+      <div class="portfolio-single-overlay">
+        <h3>FORTSUN NEWS</h3>
+        <p>Jornal de notícias e atualidades FORTSUN</p>
+        <div class="portfolio-single-button">Acessar</div>
+      </div>
+    </a>
+  </div>
+</section>
+
+  <!-- Programas -->
+<div id="sun-academy">
+  <section class="section portfolio-section" id="portfolio">
+    <div class="section-title">
+      <h2>SUN ACADEMY</h2>
+    </div>
+    <div class="portfolio-single-container">
+      <a href="academy.html" class="portfolio-single-item" target="_blank" data-aos="zoom-in" data-aos-duration="1000">
+        <img src="assets/img/sun academy (3).png" alt="FORTSUN NEWS" class="portfolio-single-img">
+        <div class="portfolio-single-overlay">
+          <h3>SUN ACADEMY</h3>
+          <p>Jornal de notícias e atualidades FORTSUN</p>
+          <div class="portfolio-single-button">Acessar</div>
+        </div>
+      </a>
+    </div>
+  </section>
+</div>
+
+  <!-- Parcerias -->
+  <section class="section partners-section" id="partners">
+    <div class="section-title">
+      <h2>Nossas Parcerias</h2>
+    </div>
+    <div class="partners-logos" data-aos="zoom-in-up" data-aos-duration="1000">
+      <img src="https://http2.mlstatic.com/frontend-assets/ui-navigation/5.18.5/mercadopago/logo__small@2x.png" alt="Mercado Pago" class="partner-logo mercado-pago">
+      <img src="assets/img/unifor-logo.png" alt="Unifor" class="partner-logo">
+      <img src="assets/img/unnamed (1).png" alt="Parceiro 2" class="partner-logo" style="width: 150px;">
+      <img src="assets/img/tp-logo.png" alt="Parceiro 3" class="partner-logo" style="width: 150px;">
+      <img src="assets/img/bRADESCO DENTAL - PARCERIA.png" alt="Parceiro 4" class="partner-logo" style="width: 150px;">
+    </div>
+  </section>
+
+  <!-- Trabalhe conosco -->
+  <section class="section work-with-us" id="work">
+    <div class="section-title">
+      <h2>Venha Trabalhar Conosco</h2>
+    </div>
+    <p>Junte-se à nossa equipe de colaboradores internos ou externos e faça parte dessa revolução nos meios de pagamento.</p>
+    <div class="benefits" data-aos="zoom-in-up" data-aos-duration="1000">
+      <div class="benefit-item">
+        <i class="fas fa-dollar-sign"></i>
+        <h3>Remuneração Atraente</h3>
+        <p>Comissões competitivas e bonificações por desempenho.</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-graduation-cap"></i>
+        <h3>Treinamento Contínuo</h3>
+        <p>Capacitação constante para você vender cada vez mais.</p>
+      </div>
+      <div class="benefit-item">
+        <i class="fas fa-medal"></i>
+        <h3>Oportunidades de Crescimento</h3>
+        <p>Plano de carreira com possibilidade de crescimento rápido.</p>
+      </div>
+    </div>
+    <a href="https://ats.abler.com.br/jobs/fortsun" class="cta-button" target="_blank">Quero fazer parte</a>
+  </section>
+
+  <!-- Contato -->
+  <!-- <section class="section contact" id="contact">
+    <div class="section-title">
+      <h2>Fale Conosco</h2>
+    </div>
+    <div class="contact-form">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Nome Completo</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Telefone</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Mensagem</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit" class="cta-button">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section> -->
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content" id="footer">
+      <div class="footer-column">
+        <h3>FORTSUN Brasil</h3>
+        <p>Parceira estratégica do Mercado Pago, oferecendo as melhores soluções em adquirência para o seu negócio.</p>
+        <div class="social-links">
+          <a href="https://www.instagram.com/fortsunbrasil/" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/fortsunbrasil/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://wa.me/5585998330084?text=Quero%20conhecer%20mais%20a%20Fortsun!" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-column">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#partnership">Parceria</a></li>
+          <li><a href="#services">Serviços</a></li>
+          <li><a href="#portfolio">Portfólio</a></li>
+          <li><a href="#programs">Programas</a></li>
+          <li><a href="#partners">Parceiros</a></li>
+          <li><a href="#contact">Contato</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h3>Contato</h3>
+        <ul>
+          <li><i class="fas fa-map-marker-alt"></i> Rua Augusta Benevides, 1304, Parque Santa Maria - Fortaleza-CE, 60873-065</li>
+          <li><i class="fas fa-phone"></i> (85) 99833-0084</li>
+          <li><i class="fas fa-envelope"></i> debora@fortsunbrasil.com</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 FORTSUN Brasil. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="assets/script.js">
+
+    
+
+    document.addEventListener('DOMContentLoaded', function() {
+
+      const elementos = document.querySelectorAll(
+    '.partnership-container, .service-card, .state-card, ' +
+    '.portfolio-item, .program-item, .benefit-item, ' +
+    '.partner-logo, .section-title, .contact-form'
+  );
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+          observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.1 
+  });
+
+  elementos.forEach(elemento => {
+    elemento.style.opacity = '0';
+    elemento.style.transform = 'translateY(30px)';
+    elemento.style.transition = 'all 0.6s ease-out';
+    observer.observe(elemento);
+  });
+});
+
+
+    document.addEventListener('DOMContentLoaded', () => {
+  const section = document.querySelector('#partnership');
+  const parts = section.querySelectorAll('.story-part');
+  const totalParts = parts.length;
+  let currentPart = 0;
+
+  // Função para ativar a palavra atual e desativar as outras
+  function updateActivePart(index) {
+    parts.forEach((part, i) => {
+      if (i === index) {
+        part.classList.add('active');
+      } else {
+        part.classList.remove('active');
+      }
+    });
+  }
+
+  updateActivePart(currentPart);
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    if (scrollTop >= sectionTop && scrollTop < sectionTop + sectionHeight) {
+      // Bloquear scroll normal dentro da seção, controlar manualmente
+      const relativeScroll = scrollTop - sectionTop;
+      const partHeight = window.innerHeight;
+
+      // Calcular qual palavra mostrar conforme o scroll
+      const newPart = Math.min(
+        totalParts - 1,
+        Math.floor(relativeScroll / partHeight)
+      );
+
+      if (newPart !== currentPart) {
+        currentPart = newPart;
+        updateActivePart(currentPart);
+      }
+
+      // Bloquear scroll normal para evitar passar rápido demais
+      window.scrollTo(0, sectionTop + relativeScroll);
+    }
+  });
+});
+  </script>
+  <script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Configuração do GSAP
+  gsap.registerPlugin(ScrollTrigger);
+  
+  // Animação do título
+  gsap.from(".title-animate", {
+    scrollTrigger: {
+      trigger: ".partnership-section",
+      start: "top 80%"
+    },
+    duration: 1.2,
+    y: 50,
+    opacity: 0,
+    ease: "power3.out"
+  });
+
+  // Animação das palavras (efeito de preenchimento + rotação 3D)
+  const words = gsap.utils.toArray(".history-word");
+  
+  words.forEach((word, i) => {
+    gsap.to(word, {
+      scrollTrigger: {
+        trigger: ".partnership-section",
+        start: "top 70%",
+        toggleActions: "play none none none"
+      },
+      duration: 1.5,
+      opacity: 1,
+      delay: i * 0.3,
+      ease: "power4.out"
+    });
+    
+    gsap.to(word, {
+      scrollTrigger: {
+        trigger: ".partnership-section",
+        start: "top 70%"
+      },
+      duration: 2,
+      rotateX: 0,
+      rotateY: 0,
+      delay: i * 0.3,
+      ease: "elastic.out(1, 0.5)",
+      startAt: {rotateX: 90, rotateY: 30}
+    });
+    
+    gsap.to(word.querySelector("::before"), {
+      scrollTrigger: {
+        trigger: word,
+        start: "top 80%"
+      },
+      duration: 1.8,
+      width: "100%",
+      delay: i * 0.4,
+      ease: "power4.inOut"
+    });
+  });
+
+  // Efeito magnético no botão
+  const btn = document.querySelector(".magnetic-btn");
+  if (btn) {
+    btn.addEventListener("mousemove", (e) => {
+      const rect = btn.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      
+      gsap.to(btn, {
+        x: (x - rect.width/2) * 0.2,
+        y: (y - rect.height/2) * 0.2,
+        duration: 0.6,
+        ease: "power2.out"
+      });
+      
+      gsap.to(".btn-arrow", {
+        x: 5,
+        opacity: 1,
+        duration: 0.3
+      });
+    });
+    
+    btn.addEventListener("mouseleave", () => {
+      gsap.to(btn, {
+        x: 0,
+        y: 0,
+        duration: 0.6,
+        ease: "elastic.out(1, 0.5)"
+      });
+      
+      gsap.to(".btn-arrow", {
+        x: -5,
+        opacity: 0,
+        duration: 0.2
+      });
+    });
+  }
+
+  // Animação 3D da imagem
+  const logo = document.querySelector(".floating-3d");
+  if (logo) {
+    window.addEventListener("mousemove", (e) => {
+      const x = e.clientX / window.innerWidth;
+      const y = e.clientY / window.innerHeight;
+      
+      gsap.to(logo, {
+        rotationY: 15 * (x - 0.5),
+        rotationX: -15 * (y - 0.5),
+        transformPerspective: 700,
+        ease: "power2.out",
+        duration: 1
+      });
+    });
+    
+    // Efeito de flutuação contínua
+    gsap.to(logo, {
+      y: 20,
+      duration: 3,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut"
+    });
+  }
+});
+
+const orbitalAnimation = () => {
+  const logo = document.querySelector('.orbital-logo');
+  const dots = gsap.utils.toArray('.dot');
+  const container = document.querySelector('.orbital-container');
+  
+  if (!logo) return;
+
+  // Movimento circular principal
+  gsap.to(logo, {
+    duration: 10,
+    rotation: 180,
+    repeat: -1,
+    ease: "none",
+    transformOrigin: "center center"
+  });
+
+  // Movimento orbital dos pontos
+  dots.forEach((dot, i) => {
+    const radius = 120;
+    const angle = (i * 120); 
+    
+    gsap.set(dot, {
+      x: Math.cos(angle * Math.PI/180) * radius,
+      y: Math.sin(angle * Math.PI/180) * radius,
+      xPercent: -50,
+      yPercent: -50
+    });
+
+    gsap.to(dot, {
+      duration: 15 + (i * 3),
+      x: `+=${Math.cos(angle * Math.PI/180) * 360}`,
+      y: `+=${Math.sin(angle * Math.PI/180) * 360}`,
+      rotation: 360,
+      repeat: -1,
+      ease: "none",
+      transformOrigin: "center center"
+    });
+
+    // Efeito de pulsação
+    gsap.to(dot, {
+      duration: 2 + (i * 0.5),
+      scale: 1.3,
+      opacity: 0.9,
+      repeat: -1,
+      yoyo: true,
+      ease: "sine.inOut"
+    });
+  });
+
+  // Movimento de flutuação com interatividade
+  gsap.to(logo, {
+    duration: 5,
+    y: "-=20",
+    rotation: -5,
+    repeat: -1,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
+
+  // Efeito de inclinação com mouse
+  // container.addEventListener("mousemove", (e) => {
+  //   const rect = container.getBoundingClientRect();
+  //   const x = (e.clientX - rect.left) / rect.width - 0.5;
+  //   const y = (e.clientY - rect.top) / rect.height - 0.5;
+    
+  //   gsap.to(logo, {
+  //     duration: 0.5,
+  //     x: x * 20,
+  //     y: y * 20,
+  //     rotationY: x * 15,
+  //     rotationX: -y * 15,
+  //     ease: "power2.out"
+  //   });
+    
+  //   gsap.to(dots, {
+  //     duration: 0.5,
+  //     x: "+=10",
+  //     y: "+=10",
+  //     ease: "power2.out"
+  //   });
+  // });
+
+  // container.addEventListener("mouseleave", () => {
+  //   gsap.to([logo, ...dots], {
+  //     duration: 1,
+  //     x: 0,
+  //     y: 0,
+  //     rotationY: 0,
+  //     rotationX: 0,
+  //     ease: "elastic.out(1, 0.5)"
+  //   });
+  // });
+};
+
+// Inicia quando a seção estiver visível
+ScrollTrigger.create({
+  trigger: ".partnership-section",
+  start: "top 70%",
+  onEnter: orbitalAnimation
+});
+
+// Menu Mobile
+document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+  document.querySelector('.nav-links').classList.toggle('active');
+  this.querySelector('i').classList.toggle('fa-times');
+  this.querySelector('i').classList.toggle('fa-bars');
+});
+
+// Fechar menu ao clicar em um link
+document.querySelectorAll('.nav-links a').forEach(link => {
+  link.addEventListener('click', () => {
+    document.querySelector('.nav-links').classList.remove('active');
+    document.querySelector('.mobile-menu-btn i').classList.remove('fa-times');
+    document.querySelector('.mobile-menu-btn i').classList.add('fa-bars');
+  });
+});
+
+// Ajustar altura do hero no mobile
+function adjustHeroHeight() {
+  const hero = document.querySelector('.fullscreen-hero');
+  if (window.innerWidth <= 768) {
+    hero.style.minHeight = window.innerHeight + 'px';
+  } else {
+    hero.style.minHeight = '100vh';
+  }
+}
+
+// Executar ao carregar e redimensionar
+window.addEventListener('load', adjustHeroHeight);
+window.addEventListener('resize', adjustHeroHeight);
+
+</script>
 </body>
 </html>

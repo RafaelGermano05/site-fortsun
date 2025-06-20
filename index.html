@@ -86,7 +86,7 @@
   <!-- Parceria Mercado Pago -->
  <section class="section partnership-section" id="partnership" class="historia">
   <div class="partnership-container">
-    <div class="partnership-text">
+    <div class="partnership-text" data-aos="zoom-in-up">
       <!-- <h2 class="title-animate">Parceria Estratégica <span>Mercado Pago</span></h2> -->
       
       <!-- <div class="history-headline">
@@ -150,7 +150,11 @@
       </a>
     </div>
     
+<<<<<<< HEAD
     <!-- <div class="partnership-images">
+=======
+<!--     <div class="partnership-images">
+>>>>>>> e249358dd01ad0fa7f882d76c8b1fccb011c551d
   <div class="orbital-container">
     <img src="assets/img/SLOGAN FORTSUN PNG (3).png" alt="Maquininha Mercado Pago" class="partnership-logo orbital-logo">
     <div class="orbital-dots">
@@ -456,6 +460,7 @@
   // Configuração do GSAP
 //   gsap.registerPlugin(ScrollTrigger);
   
+<<<<<<< HEAD
 //   // Animação do título
 //   gsap.from(".title-animate", {
 //     scrollTrigger: {
@@ -467,10 +472,24 @@
 //     opacity: 0,
 //     ease: "power3.out"
 //   });
+=======
+  // Animação do título
+  gsap.from(".title-animate", {
+    scrollTrigger: {
+      trigger: ".partnership-section",
+      start: "top 80%"
+    },
+    duration: 3,
+    y: 50,
+    opacity: 0,
+    ease: "power3.out"
+  });
+>>>>>>> e249358dd01ad0fa7f882d76c8b1fccb011c551d
 
 //   // Animação das palavras (efeito de preenchimento + rotação 3D)
 //   const words = gsap.utils.toArray(".history-word");
   
+<<<<<<< HEAD
 //   words.forEach((word, i) => {
 //     gsap.to(word, {
 //       scrollTrigger: {
@@ -508,6 +527,45 @@
 //       ease: "power4.inOut"
 //     });
 //   });
+=======
+  words.forEach((word, i) => {
+    gsap.to(word, {
+      scrollTrigger: {
+        trigger: ".partnership-section",
+        start: "top 70%",
+        toggleActions: "play none none none"
+      },
+      duration: 3,
+      opacity: 1,
+      delay: i * 0.3,
+      ease: "power4.out"
+    });
+    
+    gsap.to(word, {
+      scrollTrigger: {
+        trigger: ".partnership-section",
+        start: "top 70%"
+      },
+      duration: 3,
+      rotateX: 0,
+      rotateY: 0,
+      delay: i * 0.3,
+      ease: "elastic.out(1, 0.5)",
+      startAt: {rotateX: 90, rotateY: 30}
+    });
+    
+    gsap.to(word.querySelector("::before"), {
+      scrollTrigger: {
+        trigger: word,
+        start: "top 80%"
+      },
+      duration: 3.2,
+      width: "100%",
+      delay: i * 0.4,
+      ease: "power4.inOut"
+    });
+  });
+>>>>>>> e249358dd01ad0fa7f882d76c8b1fccb011c551d
 
 //   // Efeito magnético no botão
 //   const btn = document.querySelector(".magnetic-btn");
@@ -563,6 +621,7 @@
 //       });
 //     });
     
+<<<<<<< HEAD
 //     // Efeito de flutuação contínua
 //     gsap.to(logo, {
 //       y: 20,
@@ -573,6 +632,18 @@
 //     });
 //   }
 // });
+=======
+    // Efeito de flutuação contínua
+    gsap.to(logo, {
+      y: 20,
+      duration: 3,
+      repeat: 0,
+      yoyo: true,
+      ease: "sine.inOut"
+    });
+  }
+});
+>>>>>>> e249358dd01ad0fa7f882d76c8b1fccb011c551d
 
 // const orbitalAnimation = () => {
 //   const logo = document.querySelector('.orbital-logo');
@@ -623,6 +694,7 @@
 //     });
 //   });
 
+<<<<<<< HEAD
 //   // Movimento de flutuação com interatividade
 //   gsap.to(logo, {
 //     duration: 5,
@@ -632,6 +704,17 @@
 //     yoyo: true,
 //     ease: "sine.inOut"
 //   });
+=======
+  // Movimento de flutuação com interatividade
+  gsap.to(logo, {
+    duration: 5,
+    y: "-=20",
+    rotation: -5,
+    repeat: 0,
+    yoyo: true,
+    ease: "sine.inOut"
+  });
+>>>>>>> e249358dd01ad0fa7f882d76c8b1fccb011c551d
 
   // Efeito de inclinação com mouse
   // container.addEventListener("mousemove", (e) => {

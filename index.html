@@ -10,8 +10,10 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link rel="shortcut icon" href="assets/img/fav-fortsun-logo.jpg" type="image/x-icon" />
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+  <script src="assets/anime.js"></script>
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
   <style>
   .fullscreen-hero {
     height: 100vh;
@@ -82,24 +84,73 @@
 </section>
 
   <!-- Parceria Mercado Pago -->
-<section class="section partnership-section" id="partnership" class="historia">
+ <section class="section partnership-section" id="partnership" class="historia">
   <div class="partnership-container">
     <div class="partnership-text">
       <!-- <h2 class="title-animate">Parceria Estratégica <span>Mercado Pago</span></h2> -->
       
-      <div class="history-headline">
-        <div class="history-word" data-word="CONHEÇA" style="color: rgb(232, 242, 255);">CONHEÇA</div>
-        <div class="history-word" data-word="NOSSA" style="color: rgb(219, 235, 255);">NOSSA</div>
-        <div class="history-word" data-word="HISTÓRIA" style="color: rgb(206, 228, 255);">HISTÓRIA</div>
+      <!-- <div class="history-headline">
+        <h2 class="history-word" style="color: rgb(232, 242, 255);" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">>CONHEÇA</h2>
+        <h2 class="history-word" style="color: rgb(219, 235, 255);" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">NOSSA</h2>
+        <h2 class="history-word" style="color: rgb(206, 228, 255);" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1500">HISTÓRIA</h2>
+      </div>  -->
+      <div class="text-anime"  data-aos="zoom-in" data-aos-duration="500">
+        <h2 class="large grid centered square-grid text-xl" class="text-anime">
+            <span>C</span>
+            <span>O</span>
+            <span>N</span>
+            <span>H</span>
+            <span>E</span>
+            <span>Ç</span>
+            <span>A</span><br>
+          </span>
+            <span>N</span>
+            <span>O</span>
+            <span>S</span>
+            <span>S</span>
+            <span>A</span><br>
+          </span>
+            <span>H</span>
+            <span>I</span>
+            <span>S</span>
+            <span>T</span>
+            <span>Ó</span>
+            <span>R</span>
+            <span>I</span>
+            <span>A</span>
+          </span>
+        </h2>
       </div>
+
+  <!-- <div class="text-anime" data-aos="zoom-in" data-aos-duration="500">
+    <h2 class="text-xl">
+      <span class="word">
+        <span>C</span><span>O</span><span>N</span><span>H</span><span>E</span><span>Ç</span><span>A</span>
+      </span>
+      <span class="word">
+        <span>N</span><span>O</span><span>S</span><span>S</span><span>A</span>
+      </span>
+      <span class="word">
+        <span>H</span><span>I</span><span>S</span><span>T</span><span>Ó</span><span>R</span><span>I</span><span>A</span>
+      </span>
+    </h2>
+  </div> -->
+
+   
+
       
       <a href="historia.html" class="cta-button magnetic-btn" target="_blank">
-        <span class="btn-text">Conheça a FORTSUN</span>
-        <span class="btn-arrow">→</span>
+        <span class="btn-text">Conheça a FORTSUN →</span>
       </a>
     </div>
     
-    <div class="partnership-images">
+    <!-- <div class="partnership-images">
   <div class="orbital-container">
     <img src="assets/img/SLOGAN FORTSUN PNG (3).png" alt="Maquininha Mercado Pago" class="partnership-logo orbital-logo">
     <div class="orbital-dots">
@@ -108,7 +159,7 @@
       <div class="dot dot-3"><img src="assets/img/SLOGAN FORTSUN PNG (1).png" alt="" data-aos="zoom-in-up" data-aos-duration="500"></div>
       <div class="dot dot-4"><img src="assets/img/SLOGAN FORTSUN PNG (1).png" alt="" data-aos="zoom-in-up" data-aos-duration="500"></div>
     </div>
-  </div>
+  </div> -->
 </div>
     <!-- <div class="partnership-images">
       <img src="assets/img/hero-maquininha-img-removebg-preview.png" alt="Maquininha Mercado Pago" class="partnership-logo floating-3d">
@@ -318,9 +369,10 @@
       <p>&copy; 2025 FORTSUN Brasil. Todos os direitos reservados.</p>
     </div>
   </footer>
-
+  <script type="module" src="assets/anime.js"></script>
   <script src="assets/script.js">
 
+    
     
 
     document.addEventListener('DOMContentLoaded', function() {
@@ -400,186 +452,186 @@
 });
   </script>
   <script>
-document.addEventListener('DOMContentLoaded', function() {
+// document.addEventListener('DOMContentLoaded', function() {
   // Configuração do GSAP
-  gsap.registerPlugin(ScrollTrigger);
+//   gsap.registerPlugin(ScrollTrigger);
   
-  // Animação do título
-  gsap.from(".title-animate", {
-    scrollTrigger: {
-      trigger: ".partnership-section",
-      start: "top 80%"
-    },
-    duration: 1.2,
-    y: 50,
-    opacity: 0,
-    ease: "power3.out"
-  });
+//   // Animação do título
+//   gsap.from(".title-animate", {
+//     scrollTrigger: {
+//       trigger: ".partnership-section",
+//       start: "top 80%"
+//     },
+//     duration: 2,
+//     y: 50,
+//     opacity: 0,
+//     ease: "power3.out"
+//   });
 
-  // Animação das palavras (efeito de preenchimento + rotação 3D)
-  const words = gsap.utils.toArray(".history-word");
+//   // Animação das palavras (efeito de preenchimento + rotação 3D)
+//   const words = gsap.utils.toArray(".history-word");
   
-  words.forEach((word, i) => {
-    gsap.to(word, {
-      scrollTrigger: {
-        trigger: ".partnership-section",
-        start: "top 70%",
-        toggleActions: "play none none none"
-      },
-      duration: 1.5,
-      opacity: 1,
-      delay: i * 0.3,
-      ease: "power4.out"
-    });
+//   words.forEach((word, i) => {
+//     gsap.to(word, {
+//       scrollTrigger: {
+//         trigger: ".partnership-section",
+//         start: "top 70%",
+//         toggleActions: "play none none none"
+//       },
+//       duration: 1.5,
+//       opacity: 1,
+//       delay: i * 0.3,
+//       ease: "power4.out"
+//     });
     
-    gsap.to(word, {
-      scrollTrigger: {
-        trigger: ".partnership-section",
-        start: "top 70%"
-      },
-      duration: 2,
-      rotateX: 0,
-      rotateY: 0,
-      delay: i * 0.3,
-      ease: "elastic.out(1, 0.5)",
-      startAt: {rotateX: 90, rotateY: 30}
-    });
+//     gsap.to(word, {
+//       scrollTrigger: {
+//         trigger: ".partnership-section",
+//         start: "top 70%"
+//       },
+//       duration: 2,
+//       rotateX: 0,
+//       rotateY: 0,
+//       delay: i * 0.3,
+//       ease: "elastic.out(1, 0.5)",
+//       startAt: {rotateX: 90, rotateY: 30}
+//     });
     
-    gsap.to(word.querySelector("::before"), {
-      scrollTrigger: {
-        trigger: word,
-        start: "top 80%"
-      },
-      duration: 1.8,
-      width: "100%",
-      delay: i * 0.4,
-      ease: "power4.inOut"
-    });
-  });
+//     gsap.to(word.querySelector("::before"), {
+//       scrollTrigger: {
+//         trigger: word,
+//         start: "top 80%"
+//       },
+//       duration: 1.8,
+//       width: "100%",
+//       delay: i * 0.4,
+//       ease: "power4.inOut"
+//     });
+//   });
 
-  // Efeito magnético no botão
-  const btn = document.querySelector(".magnetic-btn");
-  if (btn) {
-    btn.addEventListener("mousemove", (e) => {
-      const rect = btn.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
+//   // Efeito magnético no botão
+//   const btn = document.querySelector(".magnetic-btn");
+//   if (btn) {
+//     btn.addEventListener("mousemove", (e) => {
+//       const rect = btn.getBoundingClientRect();
+//       const x = e.clientX - rect.left;
+//       const y = e.clientY - rect.top;
       
-      gsap.to(btn, {
-        x: (x - rect.width/2) * 0.2,
-        y: (y - rect.height/2) * 0.2,
-        duration: 0.6,
-        ease: "power2.out"
-      });
+//       gsap.to(btn, {
+//         x: (x - rect.width/2) * 0.2,
+//         y: (y - rect.height/2) * 0.2,
+//         duration: 0.6,
+//         ease: "power2.out"
+//       });
       
-      gsap.to(".btn-arrow", {
-        x: 5,
-        opacity: 1,
-        duration: 0.3
-      });
-    });
+//       gsap.to(".btn-arrow", {
+//         x: 5,
+//         opacity: 1,
+//         duration: 0.3
+//       });
+//     });
     
-    btn.addEventListener("mouseleave", () => {
-      gsap.to(btn, {
-        x: 0,
-        y: 0,
-        duration: 0.6,
-        ease: "elastic.out(1, 0.5)"
-      });
+//     btn.addEventListener("mouseleave", () => {
+//       gsap.to(btn, {
+//         x: 0,
+//         y: 0,
+//         duration: 0.6,
+//         ease: "elastic.out(1, 0.5)"
+//       });
       
-      gsap.to(".btn-arrow", {
-        x: -5,
-        opacity: 0,
-        duration: 0.2
-      });
-    });
-  }
+//       gsap.to(".btn-arrow", {
+//         x: -5,
+//         opacity: 0,
+//         duration: 0.2
+//       });
+//     });
+//   }
 
-  // Animação 3D da imagem
-  const logo = document.querySelector(".floating-3d");
-  if (logo) {
-    window.addEventListener("mousemove", (e) => {
-      const x = e.clientX / window.innerWidth;
-      const y = e.clientY / window.innerHeight;
+//   // Animação 3D da imagem
+//   const logo = document.querySelector(".floating-3d");
+//   if (logo) {
+//     window.addEventListener("mousemove", (e) => {
+//       const x = e.clientX / window.innerWidth;
+//       const y = e.clientY / window.innerHeight;
       
-      gsap.to(logo, {
-        rotationY: 15 * (x - 0.5),
-        rotationX: -15 * (y - 0.5),
-        transformPerspective: 700,
-        ease: "power2.out",
-        duration: 1
-      });
-    });
+//       gsap.to(logo, {
+//         rotationY: 15 * (x - 0.5),
+//         rotationX: -15 * (y - 0.5),
+//         transformPerspective: 700,
+//         ease: "power2.out",
+//         duration: 1
+//       });
+//     });
     
-    // Efeito de flutuação contínua
-    gsap.to(logo, {
-      y: 20,
-      duration: 3,
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut"
-    });
-  }
-});
+//     // Efeito de flutuação contínua
+//     gsap.to(logo, {
+//       y: 20,
+//       duration: 3,
+//       repeat: 0,
+//       yoyo: true,
+//       ease: "sine.inOut"
+//     });
+//   }
+// });
 
-const orbitalAnimation = () => {
-  const logo = document.querySelector('.orbital-logo');
-  const dots = gsap.utils.toArray('.dot');
-  const container = document.querySelector('.orbital-container');
+// const orbitalAnimation = () => {
+//   const logo = document.querySelector('.orbital-logo');
+//   const dots = gsap.utils.toArray('.dot');
+//   const container = document.querySelector('.orbital-container');
   
-  if (!logo) return;
+//   if (!logo) return;
 
-  // Movimento circular principal
-  gsap.to(logo, {
-    duration: 10,
-    rotation: 180,
-    repeat: -1,
-    ease: "none",
-    transformOrigin: "center center"
-  });
+//   // Movimento circular principal
+//   gsap.to(logo, {
+//     duration: 10,
+//     rotation: 180,
+//     repeat: -1,
+//     ease: "none",
+//     transformOrigin: "center center"
+//   });
 
-  // Movimento orbital dos pontos
-  dots.forEach((dot, i) => {
-    const radius = 120;
-    const angle = (i * 120); 
+//   // Movimento orbital dos pontos
+//   dots.forEach((dot, i) => {
+//     const radius = 120;
+//     const angle = (i * 120); 
     
-    gsap.set(dot, {
-      x: Math.cos(angle * Math.PI/180) * radius,
-      y: Math.sin(angle * Math.PI/180) * radius,
-      xPercent: -50,
-      yPercent: -50
-    });
+//     gsap.set(dot, {
+//       x: Math.cos(angle * Math.PI/180) * radius,
+//       y: Math.sin(angle * Math.PI/180) * radius,
+//       xPercent: -50,
+//       yPercent: -50
+//     });
 
-    gsap.to(dot, {
-      duration: 15 + (i * 3),
-      x: `+=${Math.cos(angle * Math.PI/180) * 360}`,
-      y: `+=${Math.sin(angle * Math.PI/180) * 360}`,
-      rotation: 360,
-      repeat: -1,
-      ease: "none",
-      transformOrigin: "center center"
-    });
+//     gsap.to(dot, {
+//       duration: 15 + (i * 3),
+//       x: `+=${Math.cos(angle * Math.PI/180) * 360}`,
+//       y: `+=${Math.sin(angle * Math.PI/180) * 360}`,
+//       rotation: 360,
+//       repeat: -1,
+//       ease: "none",
+//       transformOrigin: "center center"
+//     });
 
-    // Efeito de pulsação
-    gsap.to(dot, {
-      duration: 2 + (i * 0.5),
-      scale: 1.3,
-      opacity: 0.9,
-      repeat: -1,
-      yoyo: true,
-      ease: "sine.inOut"
-    });
-  });
+//     // Efeito de pulsação
+//     gsap.to(dot, {
+//       duration: 2 + (i * 0.5),
+//       scale: 1.3,
+//       opacity: 0.9,
+//       repeat: -1,
+//       yoyo: true,
+//       ease: "sine.inOut"
+//     });
+//   });
 
-  // Movimento de flutuação com interatividade
-  gsap.to(logo, {
-    duration: 5,
-    y: "-=20",
-    rotation: -5,
-    repeat: -1,
-    yoyo: true,
-    ease: "sine.inOut"
-  });
+//   // Movimento de flutuação com interatividade
+//   gsap.to(logo, {
+//     duration: 5,
+//     y: "-=20",
+//     rotation: -5,
+//     repeat: -1,
+//     yoyo: true,
+//     ease: "sine.inOut"
+//   });
 
   // Efeito de inclinação com mouse
   // container.addEventListener("mousemove", (e) => {
@@ -614,7 +666,7 @@ const orbitalAnimation = () => {
   //     ease: "elastic.out(1, 0.5)"
   //   });
   // });
-};
+// };
 
 // Inicia quando a seção estiver visível
 ScrollTrigger.create({
@@ -626,8 +678,8 @@ ScrollTrigger.create({
 // Menu Mobile
 document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
   document.querySelector('.nav-links').classList.toggle('active');
-  this.querySelector('i').classList.toggle('fa-times');
-  this.querySelector('i').classList.toggle('fa-bars');
+ this.querySelector('i').classList.toggle('fa-times');
+  //this.querySelector('i').classList.toggle('fa-bars');
 });
 
 // Fechar menu ao clicar em um link
